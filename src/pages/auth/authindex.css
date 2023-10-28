@@ -1,0 +1,26 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 80vh;
+  font-size: 1.3rem;
+}
+.login-page button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 2px solid rgb(170, 170, 170);
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.login-page button svg {
+  font-size: 2rem;
+}
+.login-page button:hover {
+  border: 2px solid black;
+}

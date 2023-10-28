@@ -1,0 +1,127 @@
+.expense-tracker {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+
+  display: flex;
+  min-height: 60vh;
+  padding: 1rem;
+}
+.expense-tracker .containerl {
+  font-size: 1.4rem;
+  /* border: 2px solid red; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 20px;
+}
+.expense-tracker .containerr {
+  border-left: 8px solid white;
+  font-size: 1.4rem;
+  text-align: left;
+  flex: 1;
+  /* border: 2px solid red; */
+  padding: 1rem;
+}
+.expense-tracker .containerr form {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.containerr form .inputset {
+  display: flex;
+  flex-direction: column;
+}
+.containerr form input {
+  font-size: 1rem;
+  width: 80%;
+  border: none;
+  height: 35px;
+  padding: 3px 6px;
+  color: black;
+  border-radius: 5px;
+  transition: 0.3s all ease;
+}
+.containerr form input::placeholder {
+  color: black;
+}
+.containerr form input[type="number"] {
+  font-size: 1rem;
+  width: 20%;
+  border: none;
+  height: 35px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  transition: 0.3s all ease;
+}
+.containerr form input:focus-visible {
+  /* border: 2px solid black; */
+  outline: none;
+}
+.containerr form button {
+  width: 25%;
+  padding: 5px 10px;
+  background-color: black;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  transition: 0.3s all ease-in-out;
+}
+.containerr form button:hover {
+  box-shadow: 2px 2px yellow;
+}
+.containerr form .transactiontype {
+  display: flex;
+  gap: 20px;
+  /* border: 2px solid black; */
+  width: 100%;
+  margin: 0 auto;
+}
+form .transactiontype .radio {
+  display: flex;
+  gap: 3px;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+.transactiontype .radio label {
+  cursor: pointer;
+}
+
+/* transactions */
+.transactions {
+  min-height: 60vh;
+  padding: 1rem;
+  font-size: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.transactions table {
+  width: 100%;
+  font-size: 1.3rem;
+}
+.transactions table .headtabl {
+  /* background-color: #7fffd4; */
+  font-size: 1.8rem;
+}
+table tbody tr td {
+  padding: 3px 4px;
+}
+
+@media (max-width: 751px) {
+  .expense-tracker {
+    flex-direction: column;
+  }
+  .transactions table .headtabl {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,102 @@
+nav {
+  padding: 0.8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* .menus a.active {
+  color: white;
+  font-weight: 500;
+} */
+.navcontainer .userInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.userInfo img {
+  border-radius: 50%;
+  width: 35px;
+}
+.navcontainer .userInfo button {
+  padding: 4px 6px;
+  background-color: #283593;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navcontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.navcontainer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+}
+.logo h1 svg {
+  font-size: 1.2rem;
+  position: absolute;
+  background-color: gold;
+  color: black;
+  border-radius: 50%;
+}
+/* .menus a {
+  text-decoration: none;
+} */
+
+/* toggler */
+.theme {
+  width: 50px;
+  height: 25px;
+  position: relative;
+  /* border: 1px solid black; */
+}
+.theme input[type="checkbox"] {
+  display: none;
+}
+.theme .slidertoggle {
+  border-radius: 30px;
+  width: 50px;
+  height: 25px;
+  background-color: gold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.theme .slidertoggle::after {
+  content: "😎";
+  font-size: 0.9rem;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s all ease;
+}
+.theme input[type="checkbox"]:checked + label.slidertoggle::after {
+  animation: animate 0.4s;
+  content: "🌙";
+  color: white;
+
+  left: 25px;
+  background-color: black;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
